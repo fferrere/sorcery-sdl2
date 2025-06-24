@@ -6,14 +6,14 @@ Release the apprentice before the end ot time.
 
 Use items to open doors or kill monsters.
 
-The game is keyboard controlled :
+Keyboard controls :
 - 'q' : quit game
 - key up : up
 - key left : left
 - key right : right
 - space : fire
 
-At the end, go to the sanctuary to meet the apprentices.
+At the end, go to the sanctuary to join the apprentices.
 
 
 ## Dependencies
