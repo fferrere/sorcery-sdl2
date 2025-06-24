@@ -1,0 +1,22 @@
+(in-package #:sorcery-sdl2)
+
+(defvar *source-dir* (asdf:system-source-directory :sorcery-sdl2))
+(defvar *assets-dir* (merge-pathnames #P"assets/" *source-dir*))
+(defvar *board-file* (merge-pathnames "board-800x700.png" *assets-dir*))
+(defvar *tiles-file* (merge-pathnames "tilesheet-40x48.png" *assets-dir*))
+(defvar *intro-file* (merge-pathnames "intro.png" *assets-dir*))
+(defvar *bot-file* (merge-pathnames "book-of-time.png" *assets-dir*))
+(defvar *elements-file* (merge-pathnames "sprites-48x48.png" *assets-dir*))
+(defvar *stencils-tiles-file* (merge-pathnames "stencils-tiles.bin" *assets-dir*))
+(defvar *stencils-elements-file* (merge-pathnames "stencils-sprites.bin" *assets-dir*))
+(defvar *font-file* (merge-pathnames "cpc464.ttf" *assets-dir*))
+
+(defvar *game-screen-x* 80)
+(defvar *game-screen-y* 100)
+(defvar *game-screen-w* 640)
+(defvar *game-screen-h* 288)
+
+(defconstant +element-width+ 48)
+(defconstant +element-height+ 48)
+(defconstant +tile-width+ 40)
+(defconstant +tile-height+ 48)
