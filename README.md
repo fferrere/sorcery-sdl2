@@ -2,7 +2,7 @@
 
 This is a simple Common Lisp 2D Game.
 
-Release the apprentice before the end ot time.
+Release the 8 apprentices before the end ot time.
 
 Use items to open doors or kill monsters.
 
