@@ -1,6 +1,6 @@
 # Sorcery SDL2 - A Common Lisp 2D Game
 
-![Screenshot](asset/sorcery-screenshot.png)
+![Screenshot](assets/sorcery-screenshot.png)
 
 This is a simple Common Lisp 2D Game.
 
