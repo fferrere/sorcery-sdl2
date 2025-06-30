@@ -44,7 +44,8 @@
                 (move-right (+ (costume-x costume) (/ +element-width+ 2)))))
         (setf (costume-y costume-player) (costume-y costume))))))
 
-
+(defun draw-keyboard-action-key (game kb-text kb-name x y)
+  (s2e:draw-texts game (game-lang game) (list kb-text (s2e:keyboard-key-string game kb-name)) x y))
 
 ;; Game States
 (defclass game-state ()
@@ -68,12 +69,12 @@
 
     (s2e:draw-text game (game-lang game) 'start 400 420 :position :center)
     (s2e:draw-text game (game-lang game) 'keyboard 140 450)
-    (s2e:draw-text game (game-lang game) 'kb-up 160 470)
-    (s2e:draw-text game (game-lang game) 'kb-left 160 490)
-    (s2e:draw-text game (game-lang game) 'kb-right 160 510)
-    (s2e:draw-text game (game-lang game) 'kb-fire 160 530)
-    (s2e:draw-text game (game-lang game) 'kb-pause 160 550)
-    (s2e:draw-text game (game-lang game) 'kb-lang 160 570)
+    (draw-keyboard-action-key game 'kb-up "up" 160 470)
+    (draw-keyboard-action-key game 'kb-left "left" 160 490)
+    (draw-keyboard-action-key game 'kb-right "right" 160 510)
+    (draw-keyboard-action-key game 'kb-fire "space" 160 530)
+    (draw-keyboard-action-key game 'kb-pause "pause" 160 550)
+    (draw-keyboard-action-key game 'kb-lang "lang" 160 570)
     (update (game-as game) em game)
     (update (game-rs game) em game)))
 

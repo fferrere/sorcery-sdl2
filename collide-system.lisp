@@ -161,7 +161,7 @@
          (entity-manager (area-em area))
         (costume (entity-component entity-manager player 'costume)))
     (when costume
-      (pushnew entity (game-trash game))
+      (pushnew player (game-trash game))
       (add-element area 'blast
                    (costume-x costume) (costume-y costume)))))
 
